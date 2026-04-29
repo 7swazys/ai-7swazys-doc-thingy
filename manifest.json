@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Groq Doc Typer",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://docs.google.com/*", "https://api.groq.com/*"],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  }
+}
