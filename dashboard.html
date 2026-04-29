@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0f;
+      color: #e8e8f0;
+      font-family: 'Inter', sans-serif;
+      padding: 20px;
+    }
+    .panel {
+      background: #12121a;
+      border: 1px solid #2a2a32;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    textarea {
+      width: 100%;
+      background: #0a0a0f;
+      border: 1px solid #2a2a32;
+      border-radius: 8px;
+      padding: 10px;
+      color: white;
+      font-family: inherit;
+      resize: vertical;
+      margin-bottom: 12px;
+    }
+    button {
+      background: #5865f2;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      background: #0a0a0f;
+      border: 1px solid #2a2a32;
+      border-radius: 8px;
+      padding: 8px;
+      color: white;
+      margin-bottom: 12px;
+    }
+    .log {
+      background: #0a0a0f;
+      border-radius: 8px;
+      padding: 10px;
+      height: 150px;
+      overflow-y: auto;
+      font-family: monospace;
+      font-size: 11px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+<div class="panel">
+  <h3>groq doc typer</h3>
+  <input type="password" id="apiKey" placeholder="Groq API Key" value="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">
+  <textarea id="prompt" rows="3" placeholder="What should the AI write?"></textarea>
+  <button id="generate">generate & type</button>
+  <div class="log" id="log"></div>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
